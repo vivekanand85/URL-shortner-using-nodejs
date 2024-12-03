@@ -1,0 +1,9 @@
+const { default: mongoose, model } = require("mongoose");
+
+async function connectToMongoDB(url){
+    return mongoose.connect(url);
+}
+
+module.exports={
+    connectToMongoDB,
+}
