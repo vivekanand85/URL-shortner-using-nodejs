@@ -1,4 +1,4 @@
-const { default: mongoose, model } = require("mongoose");
+const { default: mongoose } = require("mongoose");
 
 async function connectToMongoDB(url){
     return mongoose.connect(url);

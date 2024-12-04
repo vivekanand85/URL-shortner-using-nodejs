@@ -17,9 +17,12 @@ async function handleShortUrl(req, res) {
         visitHistory: [],
     });
 
-    return res.status(201).json({
-        id: shortID,
-    });
+    return res.render('home',{
+        id:shortID
+    })
+    // return res.status(201).json({
+    //     id: shortID,
+    // });
     }
     catch (error) {
         console.error("Error handling short URL:", error);
